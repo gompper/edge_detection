@@ -7,22 +7,23 @@
 
 figure;
 subplot(2,5,1), imshow(double(a));
-title ('Original: horizonal\_weiss\_balken.png',"fontsize",25);
+title ('Original 1',"fontsize",25);
 subplot(2,5,6), imshow(double(b));
-title ('Gefiltert: horizonal\_weiss\_balken.png',"fontsize",25);
+title ('Gefiltert 1',"fontsize",25);
 subplot(2,5,2), imshow(double(c));
-title ('Original: horizonal\_schwarz\_weiss.png',"fontsize",25);
+title ('Original 2',"fontsize",25);
 subplot(2,5,7), imshow(double(d));
-title ('Gefiltert: horizonal\_schwarz\_weiss.png',"fontsize",25);
+title ('Gefiltert 2',"fontsize",25);
 subplot(2,5,3), imshow(double(e));
-title ('Original: horizonal\_schwarz\_balken.png',"fontsize",25);
+title ('Original 3',"fontsize",25);
 subplot(2,5,8), imshow(double(f));
-title ('Gefiltert: horizonal\_schwarz\_balken.png',"fontsize",25);
+title ('Gefiltert 3',"fontsize",25);
 subplot(2,5,4), imshow(double(g));
-title ('Original: diagonal\_schwarz\_weiss.png',"fontsize",25);
+title ('Original 4',"fontsize",25);
 subplot(2,5,9), imshow(double(h));
-title ('Gefiltert: diagonal\_schwarz\_weiss.png',"fontsize",25);
+title ('Gefiltert 4',"fontsize",25);
 subplot(2,5,5), imshow(double(i));
-title ('Original: vertikal\_schwarz\_weiss.png',"fontsize",25);
+title ('Original 5',"fontsize",25);
 subplot(2,5,10), imshow(double(j));
-title ('Gefiltert: vertikal\_schwarz\_weiss.png',"fontsize",25);
+title ('Gefiltert 5',"fontsize",25);
+

@@ -1,13 +1,11 @@
-function [I Output] = edge_detect(file)
-	
-	I=double(imread(file)); %read image  
+I=double(imread('images.jpeg')); %read image  
 	Output = zeros (size(I,1),size(I,2), "uint8"); % speicherplatz für output belegen
   
   
-  In = padarray(I,[1,1],1); % schwarzen Rand der dicke 1 mit dem wert 1 erzeugen
+  In = padarray(I,[1,1],0); % schwarzen Rand der dicke 1 mit dem wert 1 erzeugen
 
 	%In=I;      %copy image  
-	mask1=[1, 0, -1;2, 0, -2;1, 0, -1]; 
+	mask1=[1, 0, -1;1, 0, -1;1, 0, -1]; 
 	mask2=rot90(mask1);
   
 	mask1=flipud(mask1);  
@@ -40,8 +38,4 @@ function [I Output] = edge_detect(file)
   end   
   
   
-
-	#subplot(1,2,2), imshow(double(Output));
-	#title ("Gefiltert");
-endfunction
-
+  imshow(double(Output),[50,255]);
