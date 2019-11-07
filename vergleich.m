@@ -5,7 +5,7 @@
 [g h]=edge_detect('diagonal_schwarz_weiss.png');
 [i j]=edge_detect('vertikal_schwarz_weiss.png');
 
-figure;
+figure(2);
 subplot(2,5,1), imshow(double(a));
 title ('Original 1',"fontsize",25);
 subplot(2,5,6), imshow(double(b));
