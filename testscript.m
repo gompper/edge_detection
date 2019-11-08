@@ -74,6 +74,6 @@ Original=double(imread('horizonal_schwarz_weiss.png')); %read image
   subplot(3,1,2);
   title ('Original',"fontsize",25);
   imshow(double(Padded));
-    subplot(3,1,3);
+  subplot(3,1,3);
   title ('Original',"fontsize",25);
   imshow(double(Output));

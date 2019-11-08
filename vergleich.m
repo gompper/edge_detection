@@ -1,3 +1,4 @@
+pkg load image;
 
 [a b]=edge_detect('horizonal_weiss_balken.png');
 [c d]=edge_detect('horizonal_schwarz_weiss.png');
@@ -26,4 +27,5 @@ subplot(2,5,5), imshow(double(i));
 title ('Original 5',"fontsize",25);
 subplot(2,5,10), imshow(double(j));
 title ('Gefiltert 5',"fontsize",25);
+print("-S1700,800", "plot.png");
 
