@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity FIFO is
 generic(
 	DATA_WIDTH : integer := 8;
-	COLUMNS : integer := 28
+	COLUMNS : integer := 30
 	);
 port(
 	clk : in std_logic;
