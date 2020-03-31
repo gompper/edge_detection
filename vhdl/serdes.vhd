@@ -7,19 +7,20 @@ generic(
 	DATA_WIDTH : integer := 8
 );
 port(
-	clk		: in  std_logic;
-	s1_in 	: in  std_logic_vector(DATA_WIDTH - 1 downto 0);
-	s2_in 	: in std_logic_vector(DATA_WIDTH - 1 downto 0);
-	s3_in 	: in  std_logic_vector(DATA_WIDTH - 1 downto 0);
-	p1_out 	: out  std_logic_vector(DATA_WIDTH - 1 downto 0);
-	p2_out 	: out  std_logic_vector(DATA_WIDTH - 1 downto 0);
-	p3_out 	: out  std_logic_vector(DATA_WIDTH - 1 downto 0);
-	p4_out 	: out  std_logic_vector(DATA_WIDTH - 1 downto 0);
-	p5_out 	: out  std_logic_vector(DATA_WIDTH - 1 downto 0);
-	p6_out 	: out  std_logic_vector(DATA_WIDTH - 1 downto 0);
-	p7_out 	: out  std_logic_vector(DATA_WIDTH - 1 downto 0);
-	p8_out 	: out  std_logic_vector(DATA_WIDTH - 1 downto 0);
-	p9_out 	: out  std_logic_vector(DATA_WIDTH - 1 downto 0)
+	clk		: in  	std_logic;
+	--reset 	: in 	std_logic;
+	s1_in 	: in  	std_logic_vector(DATA_WIDTH - 1 downto 0);
+	s2_in 	: in 	std_logic_vector(DATA_WIDTH - 1 downto 0);
+	s3_in 	: in  	std_logic_vector(DATA_WIDTH - 1 downto 0);
+	p1_out 	: out  	std_logic_vector(DATA_WIDTH - 1 downto 0);
+	p2_out 	: out  	std_logic_vector(DATA_WIDTH - 1 downto 0);
+	p3_out 	: out  	std_logic_vector(DATA_WIDTH - 1 downto 0);
+	p4_out 	: out  	std_logic_vector(DATA_WIDTH - 1 downto 0);
+	p5_out 	: out  	std_logic_vector(DATA_WIDTH - 1 downto 0);
+	p6_out 	: out  	std_logic_vector(DATA_WIDTH - 1 downto 0);
+	p7_out 	: out  	std_logic_vector(DATA_WIDTH - 1 downto 0);
+	p8_out 	: out  	std_logic_vector(DATA_WIDTH - 1 downto 0);
+	p9_out 	: out  	std_logic_vector(DATA_WIDTH - 1 downto 0)
 );
 end ser2des;
 
@@ -50,14 +51,14 @@ if rising_edge(clk) then
 end if;
 end process;
 
-p1_out <= p1_buf(0);
+p3_out <= p1_buf(0);
 p2_out <= p1_buf(1);
-p3_out <= p1_buf(2);
-p4_out <= p2_buf(0);
+p1_out <= p1_buf(2);
+p6_out <= p2_buf(0);
 p5_out <= p2_buf(1);
-p6_out <= p2_buf(2);
-p7_out <= p3_buf(0);
+p4_out <= p2_buf(2);
+p9_out <= p3_buf(0);
 p8_out <= p3_buf(1);
-p9_out <= p3_buf(2);
+p7_out <= p3_buf(2);
 
 end behave;
